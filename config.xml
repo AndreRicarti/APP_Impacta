@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.ac7tartan"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>Ac7 Mobile - André</name>
+
+  <description>
+      Atividade AC7.
+  </description>
+
+  <author href="https://build.phonegap.com" email="ricarti.182@gmail.com">
+      André Felipe Ricarti
+  </author>
+
+  <platform name="android">
+    <icon src="iconac7.png" density="ldpi" />
+</platform>
+</widget>
