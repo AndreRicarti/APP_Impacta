@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="index.js"></script>
 </head> 
 <body> 
 
@@ -17,29 +18,264 @@
 	<h1>FIT</h1>
 </div> <!--data-role="header"-->
 <div data-role="content">
-<p>Escolha sua turma.</p>
-
-<label for="select-choice-0" class="select">Selecione seu curso</label>
-<select name="select-choice-0" id="select-choice-1">
-   <option value="si">SI</option>
-   <option value="ads">ADS</option>
+<p><strong>Escolha sua turma.</strong></p>
+<select name="selectChoice" id="selectCursos">
+	<option value="ec">Escolha seu curso</option>
+	<option value="si">SI</option>
+   	<option value="ads">ADS</option>
 </select>
 
-<ul data-role="listview" data-inset="true">
-  <li><a href="aboutus.html">About Us</a></li>
-  <li><a href="findevent.html">Find an Event</a></li>
-  <li><a href="tartans.html">Popular Tartans</a></li>
-</ul>
 
-</div> <!--data-role="content"-->
-<div data-role="footer" data-position="fixed" data-theme="a">
-	<div data-role="navbar">
-		<ul>
-			<li><a href="index.html" data-icon="info" class="ui-btn-active">About</a></li>
-			<li><a href="findevent.html" data-icon="star">Event</a></li>
-			<li><a href="tartans.html" data-icon="grid">Tartans</a></li>
-		</ul>
-	</div>
+<div class="divSi" style="display:none">
+	<ul data-role="listview" data-inset="true">
+		<li data-role="list-divider">Segunda<li>
+			
+			<h2>Aula 1 [ 19h às 19h50 ]</h2>
+			<p><strong>Disciplina :</strong> Comércio Eletrônico</p>
+			<p><strong>Prof :</strong> Vanderson Gomes Bossi</p>
+			<p><strong>Sala :</strong> A303</p>
+			
+			<h2>Aula 2 [ 19h50 às 20h40 ]</h2>
+			<p><strong>Disciplina :</strong> Comércio Eletrônico</p>
+			<p><strong>Prof :</strong> Vanderson Gomes Bossi</p>
+			<p><strong>Sala :</strong> A303</p>
+
+			<h2>Aula 3 [ 21h às 21h50 ]</h2>
+			<p><strong>Disciplina :</strong> Trabalho de Conclusão de Curso I</p>
+			<p><strong>Prof :</strong> Vanderson Gomes Bossi</p>
+			<p><strong>Sala :</strong> B316</p>
+
+			<h2>Aula 4 [ 21h50 às 22h40 ]</h2>
+			<p><strong>Disciplina :</strong> Trabalho de Conclusão de Curso I</p>
+			<p><strong>Prof :</strong> Vanderson Gomes Bossi</p>
+			<p><strong>Sala :</strong> B316</p>
+			
+		</li>
+
+		<li data-role="list-divider">Terça<li>
+			
+			<h2>Aula 1 [ 19h às 19h50 ]</h2>
+			<p><strong>Disciplina :</strong> Computador, Sociedade e Impacto Ambiental</p>
+			<p><strong>Prof :</strong> Adriano Augusto da Fonte</p>
+			<p><strong>Sala :</strong> A405</p>
+			
+			<h2>Aula 2 [ 19h50 às 20h40 ]</h2>
+			<p><strong>Disciplina :</strong> Computador, Sociedade e Impacto Ambiental</p>
+			<p><strong>Prof :</strong> Adriano Augusto da Fonte</p>
+			<p><strong>Sala :</strong> A405</p>
+
+			<h2>Aula 3 [ 21h às 21h50 ]</h2>
+			<p><strong>Disciplina :</strong> Tópicos Especiais em Sistemas de Informação I</p>
+			<p><strong>Prof :</strong> Gilson Simoes Gonçalves</p>
+			<p><strong>Sala :</strong> A405</p>
+
+			<h2>Aula 4 [ 21h50 às 22h40 ]</h2>
+			<p><strong>Disciplina :</strong> Tópicos Especiais em Sistemas de Informação I</p>
+			<p><strong>Prof :</strong> Gilson Simoes Gonçalves</p>
+			<p><strong>Sala :</strong>  A405</p>
+			
+		</li>
+
+		<li data-role="list-divider">Quarta<li>
+			
+			<h2>Aula 1 [ 19h às 19h50 ]</h2>
+			<p><strong>Disciplina :</strong> Inteligência Artificial</p>
+			<p><strong>Prof :</strong> Roberto Ângelo Fernandes Santos</p>
+			<p><strong>Sala :</strong> A308</p>
+			
+			<h2>Aula 2 [ 19h50 às 20h40 ]</h2>
+			<p><strong>Disciplina :</strong> Inteligência Artificial</p>
+			<p><strong>Prof :</strong> Roberto Ângelo Fernandes Santos</p>
+			<p><strong>Sala :</strong> A308</p>
+
+			<h2>Aula 3 [ 21h às 21h50 ]</h2>
+			<p><strong>Disciplina :</strong> Inteligência Artificial</p>
+			<p><strong>Prof :</strong> Roberto Ângelo Fernandes Santos</p>
+			<p><strong>Sala :</strong> A308</p>
+
+			<h2>Aula 4 [ 21h50 às 22h40 ]</h2>
+			<p><strong>Disciplina :</strong> Inteligência Artificial</p>
+			<p><strong>Prof :</strong> Roberto Ângelo Fernandes Santos</p>
+			<p><strong>Sala :</strong> A308</p>
+			
+		</li>
+
+		<li data-role="list-divider">Quinta<li>
+			
+			<h2>Aula 1 [ 19h às 19h50 ]</h2>
+			<p><strong>Disciplina :</strong> Engenharia de Software II</p>
+			<p><strong>Prof :</strong> Marco Túlio Jeunon</p>
+			<p><strong>Sala :</strong> A107</p>
+			
+			<h2>Aula 2 [ 19h50 às 20h40 ]</h2>
+			<p><strong>Disciplina :</strong> Engenharia de Software II</p>
+			<p><strong>Prof :</strong> Marco Túlio Jeunon</p>
+			<p><strong>Sala :</strong> A107</p>
+
+			<h2>Aula 3 [ 21h às 21h50 ]</h2>
+			<p><strong>Disciplina :</strong> Engenharia de Software II</p>
+			<p><strong>Prof :</strong> Marco Túlio Jeunon</p>
+			<p><strong>Sala :</strong> A107</p>
+
+			<h2>Aula 4 [ 21h50 às 22h40 ]</h2>
+			<p><strong>Disciplina :</strong> Engenharia de Software II</p>
+			<p><strong>Prof :</strong> Marco Túlio Jeunon</p>
+			<p><strong>Sala :</strong> A107</p>
+			
+		</li>
+
+		<li data-role="list-divider">Sexta<li>
+			
+			<h2>Aula 1 [ 19h às 19h50 ]</h2>
+			<p><strong>Disciplina :</strong> Projeto e Design de Interface Mobile</p>
+			<p><strong>Prof :</strong> Antonio Carlos Oliveira Amorim</p>
+			<p><strong>Sala :</strong> B312</p>
+			
+			<h2>Aula 2 [ 19h50 às 20h40 ]</h2>
+			<p><strong>Disciplina :</strong> Projeto e Design de Interface Mobile</p>
+			<p><strong>Prof :</strong> Antonio Carlos Oliveira Amorim</p>
+			<p><strong>Sala :</strong> B312</p>
+
+			<h2>Aula 3 [ 21h às 21h50 ]</h2>
+			<p><strong>Disciplina :</strong> Projeto e Design de Interface Mobile</p>
+			<p><strong>Prof :</strong> Antonio Carlos Oliveira Amorim</p>
+			<p><strong>Sala :</strong> B312</p>
+
+			<h2>Aula 4 [ 21h50 às 22h40 ]</h2>
+			<p><strong>Disciplina :</strong> Projeto e Design de Interface Mobile</p>
+			<p><strong>Prof :</strong> Antonio Carlos Oliveira Amorim</p>
+			<p><strong>Sala :</strong> B312</p>
+			
+		</li>
+		
+	</ul>
 </div>
+
+<div class="divADS" style="display:none">
+	<ul data-role="listview" data-inset="true">
+		<li data-role="list-divider">Segunda<li>
+			
+			<h2>Aula 1 [ 19h às 19h50 ]</h2>
+			<p><strong>Disciplina :</strong> Administração Geral</p>
+			<p><strong>Prof :</strong> João Carlos</p>
+			<p><strong>Sala :</strong> A203</p>
+			
+			<h2>Aula 2 [ 19h50 às 20h40 ]</h2>
+			<p><strong>Disciplina :</strong> Administração Geral</p>
+			<p><strong>Prof :</strong> João Carlos</p>
+			<p><strong>Sala :</strong> A203</p>
+
+			<h2>Aula 3 [ 21h às 21h50 ]</h2>
+			<p><strong>Disciplina :</strong> Administração Geral</p>
+			<p><strong>Prof :</strong> João Carlos</p>
+			<p><strong>Sala :</strong> A203</p>
+
+			<h2>Aula 4 [ 21h50 às 22h40 ]</h2>
+			<p><strong>Disciplina :</strong> Administração Geral</p>
+			<p><strong>Prof :</strong> João Carlos</p>
+			<p><strong>Sala :</strong> A203</p>
+			
+		</li>
+
+		<li data-role="list-divider">Terça<li>
+			
+			<h2>Aula 1 [ 19h às 19h50 ]</h2>
+			<p><strong>Disciplina :</strong> Arquitetura e Organização de Computadores</p>
+			<p><strong>Prof :</strong> Paulo Cesar</p>
+			<p><strong>Sala :</strong> B410</p>
+			
+			<h2>Aula 2 [ 19h50 às 20h40 ]</h2>
+			<p><strong>Disciplina :</strong> Computador, Sociedade e Impacto Ambiental</p>
+			<p><strong>Prof :</strong> Paulo Cesar</p>
+			<p><strong>Sala :</strong> B410</p>
+
+			<h2>Aula 3 [ 21h às 21h50 ]</h2>
+			<p><strong>Disciplina :</strong> Computador, Sociedade e Impacto Ambiental</p>
+			<p><strong>Prof :</strong> Paulo Cesar</p>
+			<p><strong>Sala :</strong> B410</p>
+
+			<h2>Aula 4 [ 21h50 às 22h40 ]</h2>
+			<p><strong>Disciplina :</strong> Computador, Sociedade e Impacto Ambiental</p>
+			<p><strong>Prof :</strong> Paulo Cesar</p>
+			<p><strong>Sala :</strong> B410</p>
+			
+		</li>
+
+		<li data-role="list-divider">Quarta<li>
+			
+			<h2>Aula 1 [ 19h às 19h50 ]</h2>
+			<p><strong>Disciplina :</strong> Comunicação e Expressão</p>
+			<p><strong>Prof :</strong> Danilo</p>
+			<p><strong>Sala :</strong> A301</p>
+			
+			<h2>Aula 2 [ 19h50 às 20h40 ]</h2>
+			<p><strong>Disciplina :</strong> Comunicação e Expressão</p>
+			<p><strong>Prof :</strong> Danilo</p>
+			<p><strong>Sala :</strong> A301</p>
+
+			<h2>Aula 3 [ 21h às 21h50 ]</h2>
+			<p><strong>Disciplina :</strong> Comunicação e Expressão</p>
+			<p><strong>Prof :</strong> Danilo</p>
+			<p><strong>Sala :</strong> A301</p>
+
+			<h2>Aula 4 [ 21h50 às 22h40 ]</h2>
+			<p><strong>Disciplina :</strong> Comunicação e Expressão</p>
+			<p><strong>Prof :</strong> Danilo</p>
+			<p><strong>Sala :</strong> A301</p>
+			
+		</li>
+
+		<li data-role="list-divider">Quinta<li>
+			
+			<h2>Aula 1 [ 19h às 19h50 ]</h2>
+			<p><strong>Disciplina :</strong> Algoritmos</p>
+			<p><strong>Prof :</strong> Glauco</p>
+			<p><strong>Sala :</strong> A307</p>
+			
+			<h2>Aula 2 [ 19h50 às 20h40 ]</h2>
+			<p><strong>Disciplina :</strong> Algoritmos</p>
+			<p><strong>Prof :</strong> Glauco</p>
+			<p><strong>Sala :</strong> A307</p>
+
+			<h2>Aula 3 [ 21h às 21h50 ]</h2>
+			<p><strong>Disciplina :</strong> Algoritmos</p>
+			<p><strong>Prof :</strong> Glauco</p>
+			<p><strong>Sala :</strong> A307</p>
+
+			<h2>Aula 4 [ 21h50 às 22h40 ]</h2>
+			<p><strong>Disciplina :</strong> Algoritmos</p>
+			<p><strong>Prof :</strong> Glauco</p>
+			<p><strong>Sala :</strong> A307</p>
+			
+		</li>
+
+		<li data-role="list-divider">Sexta<li>
+			
+			<h2>Aula 1 [ 19h às 19h50 ]</h2>
+			<p><strong>Disciplina :</strong> Comunicação e Expressão</p>
+			<p><strong>Prof :</strong> Danilo</p>
+			<p><strong>Sala :</strong> B212</p>
+			
+			<h2>Aula 2 [ 19h50 às 20h40 ]</h2>
+			<p><strong>Disciplina :</strong> Comunicação e Expressão</p>
+			<p><strong>Prof :</strong> Danilo</p>
+			<p><strong>Sala :</strong> B212</p>
+
+			<h2>Aula 3 [ 21h às 21h50 ]</h2>
+			<p><strong>Disciplina :</strong> Comunicação e Expressão</p>
+			<p><strong>Prof :</strong> Danilo</p>
+			<p><strong>Sala :</strong> B212</p>
+
+			<h2>Aula 4 [ 21h50 às 22h40 ]</h2>
+			<p><strong>Disciplina :</strong> Comunicação e Expressão</p>
+			<p><strong>Prof :</strong> Danilo</p>
+			<p><strong>Sala :</strong> B212</p>
+			
+		</li>
+		
+	</ul>
+</div>
+
+
 </body>
 </html>
