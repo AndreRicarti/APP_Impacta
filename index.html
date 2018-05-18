@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<title>Faculdade Impacta Tecnologia</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="tartans/tartans.css" />
+	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
 	<script src="jquery-2.1.4.min.js"></script>
 	<script src="jquery.mobile-1.4.5.min.js"></script>
@@ -18,13 +18,20 @@
 	<h1>FIT</h1>
 </div> <!--data-role="header"-->
 <div data-role="content">
-<p><strong>Escolha sua turma.</strong></p>
+
+<h4 style="text-align: center">Bem Vindo ao APP impacta</h4>
+
+<ul data-role="listview" data-inset="true">
+	<li><a href="notas.html">Faltas</a></li>
+	<li><a href="#">Calendário</a></li>
+	<li><a href="#">Contato dos professores</a></li>
+</ul>	
+
+<p><strong>Veja seu horário (Escolha o curso)</strong></p>
 <select name="selectChoice" id="selectCursos">
-	<option value="ec">Escolha seu curso</option>
 	<option value="si">SI</option>
    	<option value="ads">ADS</option>
 </select>
-
 
 <div class="divSi" style="display:none">
 	<ul data-role="listview" data-inset="true">
